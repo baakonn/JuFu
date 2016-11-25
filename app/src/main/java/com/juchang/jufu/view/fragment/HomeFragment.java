@@ -1,4 +1,4 @@
-package com.juchang.jufu.fragment;
+package com.juchang.jufu.view.fragment;
 
 
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.juchang.jufu.R;
-import com.juchang.jufu.base.BaseFragment;
+import com.juchang.jufu.view.base.BaseFragment;
 
 import butterknife.BindView;
 

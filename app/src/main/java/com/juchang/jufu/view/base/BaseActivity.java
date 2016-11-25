@@ -1,4 +1,4 @@
-package com.juchang.jufu.base;
+package com.juchang.jufu.view.base;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;

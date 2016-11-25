@@ -1,4 +1,4 @@
-package com.juchang.jufu.base;
+package com.juchang.jufu.view.base;
 
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;

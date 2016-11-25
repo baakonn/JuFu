@@ -1,4 +1,4 @@
-package com.juchang.jufu.base;
+package com.juchang.jufu.view.base;
 
 import android.app.Activity;
 import android.content.Context;

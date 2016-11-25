@@ -1,4 +1,4 @@
-package com.juchang.jufu.fragment;
+package com.juchang.jufu.view.fragment;
 
 
 import android.os.Bundle;
@@ -6,15 +6,13 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.juchang.jufu.R;
-import com.juchang.jufu.base.BaseFragment;
+import com.juchang.jufu.view.base.BaseFragment;
 
 import butterknife.BindView;
 
-public class MeFragment extends BaseFragment {
+public class MessageFragment extends BaseFragment {
     @BindView(R.id.fragment_text)
     TextView mTextView;
-
-
 
     @Override
     protected void initView(View view, Bundle savedInstanceState) {
@@ -32,7 +30,7 @@ public class MeFragment extends BaseFragment {
     }
 
     private void initView() {
-        mTextView.setText("我是MeFragment");
+        mTextView.setText("我是MessageFragment");
 
     }
 

@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.juchang.jufu.fragment.FindFragment;
-import com.juchang.jufu.fragment.HomeFragment;
-import com.juchang.jufu.fragment.MeFragment;
-import com.juchang.jufu.fragment.MessageFragment;
+import com.juchang.jufu.view.fragment.FindFragment;
+import com.juchang.jufu.view.fragment.HomeFragment;
+import com.juchang.jufu.view.fragment.MeFragment;
+import com.juchang.jufu.view.fragment.MessageFragment;
 import com.juchang.jufu.util.LogUtil;
 import com.juchang.jufu.util.ToastUtil;
 
