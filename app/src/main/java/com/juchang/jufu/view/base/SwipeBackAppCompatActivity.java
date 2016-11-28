@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.juchang.jufu.view.SwipeBackLayout;
+import com.juchang.jufu.view.widget.SwipeBackLayout;
 
 /**
  * Created by jufu on 2016/11/25.

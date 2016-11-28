@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bakon.baseapp">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity android:name="com.bakon.baseapp.activity.ImageBrowserActivity" />
+        <activity android:name="com.bakon.baseapp.activity.WebViewActivity" />
+
+    </application>
+
+</manifest>

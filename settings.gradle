@@ -1,1 +1,1 @@
-include ':app', ':basecodehelper'
+include ':app', ':baseModule'
