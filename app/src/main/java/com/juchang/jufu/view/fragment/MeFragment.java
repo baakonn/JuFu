@@ -14,26 +14,19 @@ public class MeFragment extends BaseFragment {
     @BindView(R.id.fragment_text)
     TextView mTextView;
 
+    @Override
+    protected void initData() {
 
+    }
 
     @Override
     protected void initView(View view, Bundle savedInstanceState) {
-        initData();
-        initView();
+        mTextView.setText("我是MeFragment");
     }
 
     @Override
     protected int setLayout() {
         return R.layout.fragment_layout;
-    }
-
-    private void initData() {
-
-    }
-
-    private void initView() {
-        mTextView.setText("我是MeFragment");
-
     }
 
 

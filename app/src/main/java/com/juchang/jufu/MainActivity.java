@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.juchang.jufu.view.fragment.FindFragment;
-import com.juchang.jufu.view.fragment.HomeFragment;
-import com.juchang.jufu.view.fragment.MeFragment;
-import com.juchang.jufu.view.fragment.MessageFragment;
 import com.juchang.jufu.util.LogUtil;
 import com.juchang.jufu.util.ToastUtil;
+import com.juchang.jufu.view.businessview.main.HomeFragment;
+import com.juchang.jufu.view.fragment.FindFragment;
+import com.juchang.jufu.view.fragment.MeFragment;
+import com.juchang.jufu.view.fragment.MessageFragment;
 
 import java.util.ArrayList;
 import java.util.List;

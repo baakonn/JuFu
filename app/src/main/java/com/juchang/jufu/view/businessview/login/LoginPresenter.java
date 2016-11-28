@@ -38,10 +38,10 @@ public class LoginPresenter implements LoginContract.Presenter {
                 .execute(new StringCallback() {
                     @Override
                     public void onError(Call call, Exception e, int id) {
-                        ToastUtil.showShort("OkHttpUtils-onError");
+                        ToastUtil.showShort("OkHttpUtils-loadFail");
 
                         view.dismissProgress();
-                        view.loginSuccess("onError");
+                        view.loginSuccess("loadFail");
                     }
 
                     @Override

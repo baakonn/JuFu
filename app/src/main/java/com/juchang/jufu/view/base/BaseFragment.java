@@ -18,6 +18,8 @@ public abstract class BaseFragment extends Fragment {
 
     //初始化view
     protected abstract void initView(View view, Bundle savedInstanceState);
+    //初始化data
+    protected abstract void initData();
 
     //获取布局文件id
     protected abstract int setLayout();
@@ -37,6 +39,7 @@ public abstract class BaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(setLayout(), container, false);
         ButterKnife.bind(this, view);
+        initData();
         initView(view, savedInstanceState);
         return view;
     }
