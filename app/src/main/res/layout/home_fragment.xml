@@ -9,103 +9,114 @@
 
     <include layout="@layout/top_bar"/>
 
-    <com.jude.rollviewpager.RollPagerView
-        android:id="@+id/rollPagerView"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        app:rollviewpager_hint_color="#7c7c7c"
-        app:rollviewpager_play_delay="3000"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/aqua">
-
-        <TextView
-            android:id="@+id/today"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:drawablePadding="2dp"
-            android:drawableTop="@drawable/selector_tabicon"
-            android:gravity="center"
-            android:text="今日"
-            android:textColor="@color/gold"/>
-
-        <TextView
-            android:id="@+id/treehole"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:drawablePadding="2dp"
-            android:drawableTop="@drawable/selector_tabicon"
-            android:gravity="center"
-            android:text="树洞"/>
-
-        <TextView
-            android:id="@+id/music"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:drawablePadding="2dp"
-            android:drawableTop="@drawable/selector_tabicon"
-            android:gravity="center"
-            android:text="听经"/>
-
-        <TextView
-            android:id="@+id/exercise"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:drawablePadding="2dp"
-            android:drawableTop="@drawable/selector_tabicon"
-            android:gravity="center"
-            android:text="禅修"/>
-
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:drawableLeft="@drawable/selector_tabicon"
-            android:drawablePadding="2dp"
-            android:gravity="center_vertical"
-            android:text="fragment"
-            android:textSize="16sp"/>
-
-        <TextView
-            android:id="@+id/more_text"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:drawableRight="@drawable/selector_tabicon"
-            android:gravity="center_vertical"
-            android:text="更多"
-            android:textSize="12sp"/>
-
-    </RelativeLayout>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/masterRecyclerView"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgray"
+            android:orientation="vertical">
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/rollPagerView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:rollviewpager_hint_color="@color/gold"
+                app:rollviewpager_play_delay="1000"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <TextView
+                    android:id="@+id/today"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/selector_tabicon"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textColor="@color/gold"/>
+
+                <TextView
+                    android:id="@+id/treehole"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/selector_tabicon"
+                    android:gravity="center"
+                    android:text="树洞"/>
+
+                <TextView
+                    android:id="@+id/music"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/selector_tabicon"
+                    android:gravity="center"
+                    android:text="听经"/>
+
+                <TextView
+                    android:id="@+id/exercise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/selector_tabicon"
+                    android:gravity="center"
+                    android:text="禅修"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/selector_tabicon"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_vertical"
+                    android:text="fragment"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/more_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/selector_tabicon"
+                    android:gravity="center_vertical"
+                    android:text="更多"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/masterRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

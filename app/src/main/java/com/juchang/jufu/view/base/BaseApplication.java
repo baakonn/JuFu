@@ -2,6 +2,7 @@ package com.juchang.jufu.view.base;
 
 
 import android.app.Application;
+import android.content.Context;
 
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.log.LoggerInterceptor;
@@ -18,6 +19,7 @@ public class BaseApplication extends Application {
     public static final String SESSION_TOKEN_KEY = "JuFu-Token";
 
     private static BaseApplication baseApplication;
+    public static Context baseContext;
 
     public static BaseApplication getInstance() {
         return baseApplication;
@@ -26,6 +28,7 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        baseContext = getApplicationContext();
         baseApplication = this;
         initOkHttpUtils();
     }
@@ -55,7 +58,7 @@ public class BaseApplication extends Application {
 
         OkHttpUtils.initClient(okHttpClient);
 
-            //gidle 是否使用okhttp
+        //gidle 是否使用okhttp
 //        Glide.get(this).register(GlideUrl.class, InputStream.class, new OkHttpUrlLoader.Factory(new com.squareup.okhttp.OkHttpClient()));
     }
 }

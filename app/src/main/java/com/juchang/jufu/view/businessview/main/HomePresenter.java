@@ -1,6 +1,5 @@
 package com.juchang.jufu.view.businessview.main;
 
-import com.juchang.jufu.util.ToastUtil;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
@@ -26,7 +25,6 @@ public class HomePresenter implements HomeContract.Presenter {
                 .execute(new StringCallback() {
                     @Override
                     public void onError(Call call, Exception e, int id) {
-                        ToastUtil.showShort("OkHttpUtils-loadFail");
 
                         view.dismissProgress();
                         view.loadFail("loadFail");
@@ -34,7 +32,6 @@ public class HomePresenter implements HomeContract.Presenter {
 
                     @Override
                     public void onResponse(String response, int id) {
-                        ToastUtil.showShort("OkHttpUtils-onResponse=" + response);
 
                         view.dismissProgress();
                         view.loadFirstOk("onResponse");
@@ -44,30 +41,4 @@ public class HomePresenter implements HomeContract.Presenter {
 
     }
 
-    @Override
-    public void loadNextPage() {
-        view.showProgress();
-        //请求网络
-        OkHttpUtils.get().url("url")
-                .addParams("page", "1")
-                .build()
-                .execute(new StringCallback() {
-                    @Override
-                    public void onError(Call call, Exception e, int id) {
-                        ToastUtil.showShort("OkHttpUtils-loadFail");
-
-                        view.dismissProgress();
-                        view.loadFail("loadFail");
-                    }
-
-                    @Override
-                    public void onResponse(String response, int id) {
-                        ToastUtil.showShort("OkHttpUtils-onResponse=" + response);
-
-                        view.dismissProgress();
-                        view.loadFirstOk("onResponse");
-                    }
-                });
-
-    }
 }
