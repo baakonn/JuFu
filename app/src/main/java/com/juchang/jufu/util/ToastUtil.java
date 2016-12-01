@@ -1,6 +1,7 @@
 package com.juchang.jufu.util;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.juchang.jufu.view.base.BaseApplication;
@@ -19,9 +20,15 @@ public class ToastUtil {
 	}
 
 	public static void showShort(String no_result) {
+		if (TextUtils.isEmpty(no_result)) {
+			return;
+		}
 		Toast.makeText(BaseApplication.baseContext, no_result, Toast.LENGTH_SHORT).show();
 	}
 	public static void showShort(Context context, String no_result) {
+		if (TextUtils.isEmpty(no_result)) {
+			return;
+		}
 		Toast.makeText(context, no_result, Toast.LENGTH_SHORT).show();
 	}
 }

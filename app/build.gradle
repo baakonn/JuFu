@@ -18,12 +18,28 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
         }
     }
+
+//    sourceSets {
+//        main {
+//            res.srcDirs = [
+//                    'src/main/res/layouts/item',
+//                    'src/main/res/layouts',
+//                    'src/main/res'
+//            ]
+//        }
+//    }
 }
 
+
 dependencies {
+    //测试相关
+    testCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //jar包
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
-    testCompile 'junit:junit:4.12'
     //    compile project(':baseModule')
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'

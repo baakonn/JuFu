@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JuFu.iml" filepath="$PROJECT_DIR$/JuFu.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basecodehelper/basecodehelper.iml" filepath="$PROJECT_DIR$/basecodehelper/basecodehelper.iml" />
     </modules>
   </component>
 </project>

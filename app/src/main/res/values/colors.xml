@@ -3,18 +3,30 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="mainbackground">#f8f8f8</color><!--淡灰色-->
+    <color name="color_cdad3c">#cdad3c</color><!--金色 -->
+    <color name="color_454545">#454545</color>
+    <color name="color_929292">#929292</color>
+    <color name="color_505050">#505050</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_97b555">#97b555</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <color name="background_tab_pressed">#6633B5E5</color>
-
-    <color name="home_bar_bg">#00c8cf</color>
-
-    <!--video fragment item background-->
-    <color name="video_item_bg1">#00b7ee</color>
-    <color name="video_item_bg2">#13b5b1</color>
-    <color name="video_item_bg3">#b3d465</color>
-    <color name="video_item_bg4">#f19149</color>
-    <color name="video_item_bg5">#eb6877</color>
-
 
     <color name="transparent_half">#50000000</color><!--50%透明 -->
     <color name="transparent_half3">#70000000</color><!--70%透明 -->
@@ -39,7 +51,7 @@
     <color name="moccasin">#ffe4b5</color><!--鹿皮色 -->
     <color name="navajowhite">#ffdead</color><!--纳瓦白 -->
     <color name="peachpuff">#ffdab9</color><!--桃色 -->
-    <color name="gold">#ffd700</color><!--金色 -->
+
     <color name="pink">#ffc0cb</color><!--粉红色 -->
     <color name="pink2">#df3768</color><!--粉红色 -->
     <color name="lightpink">#ffb6c1</color><!--亮粉红色 -->
